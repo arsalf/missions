@@ -4,19 +4,56 @@
     <meta charset="utf-8" />
     <title>Tugas 1</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/grid.css" rel="stylesheet" />
   </head>
   <body>
     <h2>Tugas 1 < 36B Arsal Fadilah ></h2>
-    <div class="grid-container">
-      <div id="merah">Merah</div>
-      <div id="jingga">Jingga</div>
-      <div id="hijau">Hijau</div>
-      <div id="ungu">Ungu</div>
-      <div id="pink">Pink</div>
-      <div id="hmuda">Hijau muda</div>
-      <div id="biru">Biru</div>
-      <div id="kuning">Kuning</div>
-      <div id="btua">Biru tua</div>      
+    <div class="d-grid grid-cols-5 vh-100">
+      <div
+        class="row-span-3 bg-merah text-kuning d-flex justify-content-center align-items-center"
+      >
+        Merah
+      </div>
+      <div
+        class="row-start-4 row-span-3 col-start-1 bg-jingga d-flex justify-content-center align-items-center"
+      >
+        Jingga
+      </div>
+      <div
+        class="col-start-2 col-span-2 bg-hijau d-flex justify-content-center align-items-center"
+      >
+        Hijau
+      </div>
+      <div
+        class="col-start-4 col-span-2 bg-ungu d-flex justify-content-center align-items-center"
+      >
+        Ungu
+      </div>
+      <div
+        class="row-start-2 row-span-3 col-start-2 bg-pink d-flex justify-content-center align-items-center"
+      >
+        Pink
+      </div>
+      <div
+        class="row-start-2 col-start-3 col-span-3 bg-hijau-muda d-flex justify-content-center align-items-center"
+      >
+        Hijau muda
+      </div>
+      <div
+        class="row-start-3 row-span-2 bg-hijau d-flex justify-content-center align-items-center"
+      >
+        Biru
+      </div>
+      <div
+        class="row-start-5 row-span-2 col-start-2 col-span-2 bg-kuning d-flex justify-content-center align-items-center"
+      >
+        Kuning
+      </div>
+      <div
+        class="row-start-3 row-span-4 col-start-4 col-span-2 bg-biru-tua text-kuning d-flex justify-content-center align-items-center"
+      >
+        Biru tua
+      </div>
     </div>
   </body>
 </html>
