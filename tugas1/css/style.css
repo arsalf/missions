@@ -1,9 +1,9 @@
 body,
-h1 {
+h2 {
     margin: 0;
 }
 
-h1 {
+h2 {
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 #ungu {
-    background-color: rgba(116, 0, 161, 0.8);
+    background-color: rgb(216, 147, 243);
     grid-area: 1 / 4 / 1 / span 2;
 }
 
@@ -57,7 +57,7 @@ h1 {
 .grid-container {
     display: grid;
     grid-template-columns: ". . . . .";
-    height: calc(100vh - 2em);
+    height: calc(100vh - 1.7em);
     background-color: #2196f3;
 }
 
