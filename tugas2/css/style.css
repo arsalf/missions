@@ -22,8 +22,37 @@ input {
     -webkit-font-smoothing: antialiased;
 }
 
+.item>h3 {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.serif {
+    font-family: 'Source Serif Pro', serif;
+}
+
 img {
     max-width: 100%;
+}
+
+.basis-auto {
+    flex-basis: auto;
+}
+
+.grow-0 {
+    flex-grow: 0;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-none {
+    flex: none;
+}
+
+.flex-auto {
+    flex: auto;
 }
 
 .sm-show {
@@ -42,8 +71,39 @@ img {
 
 @media (min-width: 52em) {
     .md-col-9 {
-        width: 75%!important;
+        width: 75% !important;
     }
+
+    .md-col-8 {
+        width: 66.66667% !important;
+    }
+
+    .md-col-6 {
+        width: 50%!important;
+    }
+
+    .md-col-4 {
+        width: 33.33333% !important;
+    }
+
+    .md-flex {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+.bg-green {
+    background-color: #65D777 !important;
+}
+
+.rounded-right {
+    border-radius: 0 3px 3px 0;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 .md-col-12 {
@@ -54,6 +114,8 @@ img {
     max-width: 73.75rem;
     padding-right: 2rem;
     padding-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .d-none {
@@ -115,12 +177,28 @@ img {
     padding-right: 2rem;
 }
 
+.p-1{
+    padding: 1rem;
+}
+
 .text-gray {
     color: #949EB2;
 }
 
-.mr-3 {
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-2 {
     margin-right: 2rem;
+}
+
+.mr-3 {
+    margin-right: 3rem;
+}
+
+.mr-1\/2 {
+    margin-right: .5rem;
 }
 
 .h3 {
@@ -147,11 +225,6 @@ img {
     background-color: rgb(233, 236, 239);
 }
 
-.me-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .rounded {
     border-radius: 3px;
 }
@@ -172,6 +245,10 @@ img {
     margin-bottom: 2rem;
 }
 
+.mr-2 {
+    margin-right: 2rem;
+}
+
 .mb-4 {
     margin-bottom: 4rem;
 }
@@ -182,6 +259,15 @@ img {
 
 .m-0 {
     margin: 0;
+}
+
+.slate {
+    color: #38404F;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .regular {
@@ -217,6 +303,10 @@ img {
     background-color: #fff;
 }
 
+.white {
+    color: #fff;
+}
+
 .btn,
 .btn:hover {
     text-decoration: none;
@@ -243,4 +333,18 @@ img {
 .semibold,
 .btn {
     font-weight: 600;
+}
+
+.red {
+    color: #DE3F1C;
+}
+
+.rounded-left {
+    border-radius: 3px 0 0 3px;
+}
+
+.btn-pad {
+    height: auto !important;
+    padding: 0.875rem 1.125rem !important;
+    min-width: 11.25rem;
 }
