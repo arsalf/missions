@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="assets/bootstrap-5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/images/logo.png" alt="logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        <span class="ms-1">RAMENANKU</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="nav-link" href="#">Promo</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="nav-link" href="#">Hubungi</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="nav-link" href="#">Tentang Kami</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="vh-100 bg-img-fire text-white">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="container-fluid">
+                <h1 class="text-center mb-5">RAMEN <span class="anim-txt"></span><span class="cursor"></span> DI SELURUH<br>ALAM SEMESTA</h1>
+                <div class="w-100 d-flex justify-content-evenly align-items-center">
+                    <div>
+                        <img src="assets/images/cat.png" alt="cat" class="img-fluid anim-rot">
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="https://wa.me/081222636468">Pesan Sekarang</a>
+                    </div>
+                    <div>
+                        <img src="assets/images/cat.png" alt="cat" class="img-fluid anim-rot">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between fixed-bottom">
+            <div class="position-relative mx-3" style="width:10vw;height:10vw">
+                <div class="position-absolute top-0">
+                    <img class="anim-rot img-fluid" src="assets/images/mie.png" alt="mie" style="max-height:10vw">
+                </div>
+            </div>
+            <div id="fire" class="fire">
+                <div class="flames">
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                </div>
+                <div class="logs"></div>
+            </div>
+            <div class="position-relative mx-3" style="width:10vw;height:10vw">
+                <div class="position-absolute top-0">
+                    <img class="anim-rot img-fluid" src="assets/images/mie.png" alt="mie" style="max-height:10vw;">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <canvas id="canvas" class="fixed-top pe-none"></canvas>
+
+    <script src="assets/bootstrap-5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/snake.js"></script>
+</body>
+
+</html>
